@@ -1,0 +1,62 @@
+{
+  "name": "tesoro",
+  "version": "0.0.1",
+  "description": "Build a node webapp in seconds, wires together fastify, lasso, marko, and socket.io",
+  "keywords": [
+    "fastify",
+    "marko",
+    "lasso",
+    "socket.io",
+    "webapp",
+    "express"
+  ],
+  "bugs": {
+    "url": "https://github.com/charlesread/tesoro/issues",
+    "email": "charles@charlesread.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charlesread/tesoro"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/**.js"
+  },
+  "bin": {
+    "hmls": "bin/tesoro.js"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "author": "Charles Read",
+  "license": "ISC",
+  "dependencies": {
+    "@lasso/marko-taglib": "^1.0.9",
+    "colors": "^1.1.2",
+    "copy-dir": "^0.3.0",
+    "debug": "^3.1.0",
+    "deep-extend": "^0.5.0",
+    "fastify": "^1.0.0-rc.1",
+    "lasso": "^3.1.2",
+    "lasso-less": "^2.4.7",
+    "lasso-marko": "^2.4.0",
+    "marko": "^4.7.5",
+    "node-dir": "^0.1.17",
+    "nopt": "^4.0.1",
+    "nopt-usage": "^0.1.0",
+    "require-self-ref": "^2.0.1",
+    "socket.io": "^2.0.4",
+    "type-detect": "^4.0.8"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "expect": "^22.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "pre-commit": "^1.2.2",
+    "request": "^2.83.0",
+    "should": "^13.2.1"
+  }
+}
