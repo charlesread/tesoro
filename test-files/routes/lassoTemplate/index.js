@@ -1,8 +1,10 @@
 'use strict'
 
-module.exports = [
-  {
-    method: 'get',
+const fp = require('fastify-plugin')
+
+const route = function (fastify, opts, next) {
+  fastify.route({
+    method: 'GET',
     path: '/lassoTemplate',
     handler: async function () {
       const page = require('marko').load(require.resolve('../../pages/lassoTemplate/index.marko'))
@@ -10,5 +12,8 @@ module.exports = [
         now: new Date()
       })
     }
-  }
-]
+  })
+  next()
+}
+
+module.exports = route

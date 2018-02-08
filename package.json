@@ -37,6 +37,7 @@
     "debug": "^3.1.0",
     "deep-extend": "^0.5.0",
     "fastify": "^1.0.0-rc.1",
+    "fastify-plugin": "^0.2.1",
     "lasso": "^3.1.2",
     "lasso-less": "^2.4.7",
     "lasso-marko": "^2.4.0",

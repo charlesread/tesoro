@@ -1,11 +1,14 @@
 'use strict'
 
-module.exports = [
-  {
-    method: 'get',
-    path: '/infoSomeOtherRoutes',
-    handler: function (req, h) {
-      return 'infoSomeOtherRoutes'
-    }
-  }
-]
+const route = function (fastify, opts, next) {
+ fastify.route({
+   method: 'GET',
+   path: '/infoSomeOtherRoutes',
+   handler: async function (req, reply) {
+     return 'infoSomeOtherRoutes'
+   }
+ })
+  next()
+}
+
+module.exports = route
